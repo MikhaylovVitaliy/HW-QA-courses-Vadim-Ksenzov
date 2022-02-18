@@ -1,0 +1,383 @@
+GIT Group_27 15.02.2022 01
+
+1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+$ vim Mikhaylov_HW_01_GIT.txt
+
+2. Сценарий перенесите в этот файл.
+3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+4. Создать внешний репозиторий c названием JSON.
+https://github.com/MikhaylovVitaliy
+-> Repositories
+-> New
+-> MikhaylovVitaliy/JSON
+v Pablic
+v Add a README file
+-> Create repository
+
+5. Клонировать репозиторий JSON на локальный компьютер.
+https://github.com/MikhaylovVitaliy/JSON
+-> Code
+-> Copy https://github.com/MikhaylovVitaliy/JSON.git
+$ git clone https://github.com/MikhaylovVitaliy/JSON.git
+
+6. Внутри локального JSON создать файл “new.json”.
+$ vim new.json
+
+7. Добавить файл под гит.
+$ git add new.json
+
+8. Закоммитить файл.
+$ git commit -m "16.02.2022 add new.json"
+
+9. Отправить файл на внешний GitHub репозиторий.
+$ git push
+
+10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+$ vim new.json
+
+{
+        "last_name": "Михайлов",
+        "first_name": "Виталий",
+        "patronymic": "Сергеевич",
+        "age": 44,
+        "pets": 2,
+        "salary": 60000
+}
+
+11. Отправить изменения на внешний репозиторий.
+$ git commit -am "16.02.2022 mod new.json"
+$ git push
+
+12. Создать файл preferences.json
+$ vim preferences.json
+
+13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+
+{
+        "favorite_movie": "Forrest Gump",
+        "favorite_TV_series": "Brigada",
+        "favorite_food": "chicken",
+        "favorite_season": "summer",
+        "country_to_visit": "Greece"
+}
+
+14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+$ vim skills.json
+
+{
+        "skill_1": "JSON",
+        "skill_2": "Postman",
+        "skill_3": "Fiddler",
+        "skill_4": "Dev Tools",
+        "skill_5": "Android Studio",
+        "skill_6": "Linux terminal",
+        "skill_7": "SQL",
+        "skill_8": "Jmeter",
+        "skill_9": "Python"
+}
+
+15. Отправить сразу 2 файла на внешний репозиторий.
+$ git add .
+$ git commit -am "16.02.2022 add preferences.json and skills.json"
+$ git push
+
+16. На веб интерфейсе создать файл bug_report.json.
+https://github.com/MikhaylovVitaliy/JSON
+-> Add file
+-> Create new file
+-> JSON/bug_report.json
+-> Commit new file
+
+17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+-> Add file
+-> Upload files
+-> Commit changes
+
+18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+https://github.com/MikhaylovVitaliy/JSON/blob/main/bug_report.json
+
+{
+	"Summary": "Login: Error messages in the login form are displayed in English",
+	"Environment": "All browsers/devices",
+	"Severity": "Major",
+	"Steps to reproduce": [
+		"1. Open front end https://www.roga&copita.vit",
+		"2. Follow Inloggen  link",
+		"3. Fill required fields with invalid data",
+		"4. Click Inloggen button",
+		"5. Pay attention to error messages"
+	],
+	"Actual result": "Error messages in the login form are displayed in English",
+	"Expected result": "Error messages in the login form are displayed in the chosen language",
+	"Attachment": "http://..."
+}
+ 
+19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+-> Commit changes
+
+20. Синхронизировать внешний и локальный репозиторий JSON
+$ git pull
+
+
+XML
+21. Создать внешний репозиторий c названием XML.
+https://github.com/MikhaylovVitaliy
+-> Repositories
+-> New
+-> MikhaylovVitaliy/XML
+v Pablic
+v Add a README file
+-> Create repository
+
+22. Клонировать репозиторий XML на локальный компьютер.
+https://github.com/MikhaylovVitaliy/XML
+-> Code
+-> Copy https://github.com/MikhaylovVitaliy/XML.git
+$ git clone https://github.com/MikhaylovVitaliy/XML.git
+
+23. Внутри локального XML создать файл “new.xml”.
+$ vim new.xml
+
+24. Добавить файл под гит.
+$ git add new.xml
+
+25. Закоммитить файл.
+$ git commit -m "17.02.2022 add new.xml"
+
+26. Отправить файл на внешний GitHub репозиторий.
+$ git push
+
+27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<book>
+		<title>XML_about_me</title>
+		<author>Mikhaylov Vitaliy</author>
+		<year>2022</year>
+	</book>
+
+	<about_me>
+		<last_name>Михайлов</last_name>
+		<first_name>Виталий</first_name>
+		<patronymic>Сергеевич</patronymic>
+		<age>44</age>
+		<pets>2</pets>
+		<salary>60000</salary>
+	</about_me>
+</root>
+
+28. Отправить изменения на внешний репозиторий.
+$ git commit -am "17.02.2022 mod new.xml"
+$ git push
+
+29. Создать файл preferences.xml
+$ vim preferences.xml
+
+30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+        <book>
+                <title>XML_preferences</title>
+                <author>Mikhaylov Vitaliy</author>
+                <year>2022</year>
+        </book>
+
+        <preferences>
+                <favorite_movie>Forrest Gump</favorite_movie>
+                <favorite_TV_series>Brigada</favorite_TV_series>
+                <favorite_food>chickenn</favorite_food>
+                <favorite_season>summer</favorite_season>
+                <country_to_visit>Greece</country_to_visit>
+        </preferences>
+</root>
+
+31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+$ vim skills.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+        <book>
+                <title>XML_skills</title>
+                <author>Mikhaylov Vitaliy</author>
+                <year>2022</year>
+        </book>
+
+        <skills>
+                <skill_1>JSON</skill_1>
+                <skill_2>Postman</skill_2>
+                <skill_3>Fiddler</skill_3>
+                <skill_4>Dev Tools</skill_4>
+                <skill_5>Android Studio</skill_5>
+                <skill_6>Linux terminal</skill_6>
+                <skill_7>SQL</skill_7>
+                <skill_8>Jmeter</skill_8>
+                <skill_9>Python</skill_9>
+        </skills>
+</root>
+
+32. Сделать коммит в одну строку.
+$ git add . && git commit -m "17.02.2022 add preferences.xml and skills.xml"
+
+33. Отправить сразу 2 файла на внешний репозиторий.
+$ git push
+
+34. На веб интерфейсе создать файл bug_report.xml.
+
+https://github.com/MikhaylovVitaliy/XML
+-> Add file
+-> Create new file
+-> XML/bug_report.xml
+-> Commit new file
+
+35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+-> Add file
+-> Upload files
+-> Commit changes
+
+36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+https://github.com/MikhaylovVitaliy/XML/edit/main/bug_report.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<book>
+		<title>XML_bug_report</title>
+		<author>Mikhaylov Vitaliy</author>
+		<year>2022</year>
+	</book>
+	<bug_report>
+        <Summary>Login: Error messages in the login form are displayed in English</Summary>
+        <Environment>All browsers/devices</Environment>
+        <Severity>Major</Severity>
+            <Steps_to_reproduce>
+                <number_1>1. Open front end https://www.roga_i_copita.vit</number_1>
+                <number_2>2. Follow Inloggen  link</number_2>
+                <number_3>3. Fill required fields with invalid data</number_3>
+                <number_4>4. Click Inloggen button</number_4>
+                <number_5>5. Pay attention to error messages</number_5>
+            </Steps_to_reproduce>
+        <Actual_result>Error messages in the login form are displayed in English</Actual_result>
+        <Expected_result>Error messages in the login form are displayed in the chosen language</Expected_result>
+        <Attachment>http://...</Attachment>
+	</bug_report>
+</root>
+
+37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+-> Commit changes
+
+38. Синхронизировать внешний и локальный репозиторий XML
+$ git pull
+
+
+TXT
+1. Создать внешний репозиторий c названием TXT.
+https://github.com/MikhaylovVitaliy
+-> Repositories
+-> New
+-> MikhaylovVitaliy/TXT
+v Pablic
+v Add a README file
+-> Create repository
+
+2. Клонировать репозиторий TXT на локальный компьютер.
+https://github.com/MikhaylovVitaliy/TXT
+-> Code
+-> Copy https://github.com/MikhaylovVitaliy/TXT.git
+$ git clone https://github.com/MikhaylovVitaliy/TXT.git
+
+3. Внутри локального TXT создать файл “new.txt”.
+$ vim new.txt
+
+4. Добавить файл под гит.
+$ git add new.txt
+
+5. Закоммитить файл.
+$ git commit -m "17.02.2022 add new.txt"
+
+6. Отправить файл на внешний GitHub репозиторий.
+$ git push
+
+7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+$ vim new.txt
+
+last_name: Михайлов
+first_name: Виталий
+patronymic: Сергеевич
+age: 44
+pets: 2
+salary: 60000
+
+8. Отправить изменения на внешний репозиторий.
+$ git commit -am "17.02.2022 mod new.txt"
+$ git push
+
+9. Создать файл preferences.txt
+$ vim preferences.txt
+
+10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+$ vim preferences.txt
+
+favorite_movie: Forrest Gump
+favorite_TV_series: Brigada
+favorite_food: chicken
+favorite_season: summer
+country_to_visit: Greece
+
+11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+$ vim sklls.txt
+
+skill_1: JSON
+skill_2: Postman
+skill_3: Fiddler
+skill_4: Dev Tools
+skill_5: Android Studio
+skill_6: Linux terminal
+skill_7: SQL
+skill_8: Jmeter
+skill_9: Python
+
+12. Сделать коммит в одну строку.
+$ git add . && git commit -m "17.02.2022 add preferences.txt and sklls.txt"
+
+13. Отправить сразу 2 файла на внешний репозиторий.
+$ git push
+
+14. На веб интерфейсе создать файл bug_report.txt.
+https://github.com/MikhaylovVitaliy/TXT
+-> Add file
+-> Create new file
+-> TXT/bug_report.txt
+-> Commit new file
+
+15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+-> Add file
+-> Upload files
+-> Commit changes
+
+16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+https://github.com/MikhaylovVitaliy/TXT/blob/main/bug_report.txt
+
+Summary: Login: Error messages in the login form are displayed in English
+Environment: All browsers/devices
+Severity: Major
+Steps to reproduce:
+	1. Open front end https://www.roga&copita.vit
+	2. Follow Inloggen  link
+	3. Fill required fields with invalid data
+	4. Click Inloggen button
+	5. Pay attention to error messages
+Actual result: Error messages in the login form are displayed in English
+Expected result: Error messages in the login form are displayed in the chosen language
+Attachment: http://...
+
+17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+-> Commit changes
+
+18. Синхронизировать внешний и локальный репозиторий TXT
+$ git pull
+
