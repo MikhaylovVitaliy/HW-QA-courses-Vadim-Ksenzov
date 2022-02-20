@@ -1,0 +1,109 @@
+GitHub. HW_2
+Создадим локальный репозиторий.
+$ mkdir GitHub
+$ cd GitHub
+$ git init
+
+1. На локальном репозитории сделать ветки для:
+- Postman
+$ git branch Postman
+
+- Jmeter
+$ git branch Jmeter
+
+- CheckLists
+$ git branch CheckList
+
+- Bag Reports
+$ git branch Bag_Reports
+
+- SQL
+$ git branch SQL
+
+- Charles
+$ git branch Charles
+
+- Mobile testing
+$ git branch Mobile_testing
+
+$ git branch
+  Bag_Reports
+  Charles
+  CheckList
+  Jmeter
+  Mobile_testing
+  Postman
+  SQL
+* master
+
+
+2. Запушить все ветки на внешний репозиторий
+Создадим репозиторий на GitHub:
+$ curl -u 'MikhaylovVitaliy:<token>' https://api.github.com/user/repos -d '{"name":"GitHub"}'
+
+Запушим все ветки:
+$ git push --all
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+Перейдем в ветку Bug_Reports:
+$ git checkout Bag_Reports
+
+Создаем bug_report.txt:
+$ vim bug_report.txt
+
+ID:             
+Summary:        
+Descriptions:
+- Exp:
+- Act:
+- Req:
+Steps to reproduce:
+Reproducibility:
+Severity:
+Priority:   
+Symptom:
+Workaround:
+Comments:
+Attachments:
+
+4. Запушить структуру багрепорта на внешний репозиторий
+$ git add . && git commit -m "19.02.2022 add bug_report.txt"
+$ git push -u origin Bag_Reports
+
+5. Вмержить ветку Bag Reports в Main
+$ git checkout master
+$ git merge Bag_Reports
+
+6. Запушить main на внешний репозиторий.
+$ git push origin master
+
+7. В ветке CheckLists набросать структуру чек листа.
+Перейдем в ветку CheckList:
+$ git checkout CheckList
+
+Создаем файл check_list.txt:
+$ vim check_list.txt
+
+Checking        Result
+C001            
+C002            
+C003            
+C004            
+C005            
+
+8. Запушить структуру на внешний репозиторий
+git add . && git commit -m "19.02.2022 add check_list.txt" && git push -u origin CheckList
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+-> https://github.com/MikhaylovVitaliy/GitHub/tree/master
+-> Compare & pull request
+-> Create pull request
+-> Merge pull request
+-> Confirm merge
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+Переходим в основную ветку:
+$ git checkout master
+
+Синхронизируем:
+$ git pull origin master
